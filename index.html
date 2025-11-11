@@ -1,103 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Omotech Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Your CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Omotech — GoHighLevel Expert</h1>
-      <p>Helping businesses automate their sales, book more calls, and convert more leads using GoHighLevel.</p>
-      <button class="primary" onclick="alert('Thanks for contacting Omotech!')">Hire Me</button>
-      <button class="secondary" onclick="alert('See my portfolio!')">View Portfolio</button>
-    </div>
-    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="GoHighLevel Dashboard">
-  </header>
+<!-- Header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="#">Omotech</a>
+    <nav class="nav">
+      <a href="#projects">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- ABOUT ME -->
-  <section class="about">
-    <h2>About Omotech</h2>
-    <p>I specialize in creating high-converting GoHighLevel funnels, landing pages, and websites. I help businesses look premium online while increasing their leads and sales.</p>
-  </section>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="constrain">
+    <h1>Omotech Portfolio</h1>
+    <p>Showcasing premium websites, GoHighLevel projects, and digital marketing expertise.</p>
+  </div>
+</section>
 
-  <!-- PORTFOLIO -->
-  <section class="portfolio">
-    <h2>My Work</h2>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="constrain">
+    <h2>My Projects</h2>
+    <div class="project-grid">
 
-    <!-- Sales Automation Landing Page Project -->
-    <div class="project">
-      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4436b2?w=600" alt="Sales Automation Landing Page Screenshot">
-      <h3>Sales Automation Landing Page</h3>
-      <p>A full landing page I coded from scratch, fully responsive and interactive, using HTML, CSS, and JavaScript.</p>
-      <a class="primary" href="https://omoleewotheophilus-omotech.github.io/sales-automation-landing/" target="_blank">View Project</a>
-      <a class="secondary" href="mailto:your-email@example.com">Contact Me</a>
-    </div>
-
-    <!-- <!-- Project Card: The Royal Plate -->
-<div class="project-card">
-  <a href="case-study-royal-plate.html">
-    <img src="images/royal-plate-thumb.jpg" alt="The Royal Plate Restaurant Website">
-    <h3>The Royal Plate</h3>
-    <p>Luxury Steak & Grills website – Multi-page, premium design with WhatsApp ordering.</p>
-    <span class="btn view">View Case Study</span>
-  </a>
-</div>Add more projects here in future -->
-  </section>
-
-  <!-- CERTIFICATES -->
-  <section class="certificates">
-    <h2>Certificates</h2>
-    <div class="certificate-grid">
-
-      <!-- Digital Marketing Certificate -->
-      <div class="certificate">
-        <a href="https://app-eu1.hubspot.com/academy/achievements/kwztrrkv/en/1/theophilus-omoleewo/digital-marketing" target="_blank" title="Digital Marketing Certificate">
-          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/733ca750371e4fa0badc9052f5b7d414.png" alt="Digital Marketing Certificate" />
+      <!-- Example Project 1 -->
+      <div class="project-card">
+        <a href="case-study-fresh-juice.html">
+          <img src="images/fresh-juice-thumb.jpg" alt="Fresh Juice Company">
+          <h3>Fresh Juice Company</h3>
+          <p>Modern GoHighLevel website with clean design and high conversion layout.</p>
+          <span class="btn view">View Case Study</span>
         </a>
       </div>
 
-      <!-- Email Marketing Certificate -->
-      <div class="certificate">
-        <a href="https://app-eu1.hubspot.com/academy/achievements/f1knf0q0/en/1/theophilus-omoleewo/email-marketing" target="_blank" title="Email Marketing Certificate">
-          <img src="https://hubspot-credentials-na1.s3.amazonaws.com/prod/badges/user/c17678fe9d4e457ea53658ebbf1a77ff.png" alt="Email Marketing Certificate" />
+      <!-- Example Project 2 -->
+      <div class="project-card">
+        <a href="case-study-sales-automation.html">
+          <img src="images/sales-automation-thumb.jpg" alt="Sales Automation Landing">
+          <h3>Sales Automation Landing</h3>
+          <p>High-converting landing page integrated with automation workflows.</p>
+          <span class="btn view">View Case Study</span>
         </a>
       </div>
 
+      <!-- New Project: The Royal Plate -->
+      <div class="project-card">
+        <a href="case-study-royal-plate.html">
+          <img src="images/royal-plate-thumb.jpg" alt="The Royal Plate Restaurant Website">
+          <h3>The Royal Plate</h3>
+          <p>Luxury Steak & Grills website – Multi-page, premium design with WhatsApp ordering.</p>
+          <span class="btn view">View Case Study</span>
+        </a>
+      </div>
+
+      <!-- Add more projects here as needed -->
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2>What Clients Say</h2>
-    <div class="testimonial">
-      <p>"Omotech transformed our funnel setup — leads doubled in just 2 weeks!"</p>
-      <span>- Client A</span>
-    </div>
-    <div class="testimonial">
-      <p>"Professional, fast, and the pages look amazing. Highly recommend!"</p>
-      <span>- Client B</span>
-    </div>
-    <!-- Add more testimonials as needed -->
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="constrain">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Let’s talk!</p>
+    <a href="mailto:youremail@example.com" class="btn">Send Email</a>
+  </div>
+</section>
 
-  <!-- CONTACT / CTA -->
-  <section class="cta">
-    <h2>Work With Omotech</h2>
-    <p>Want a high-converting GoHighLevel website or funnel? Let's get started.</p>
-    <button class="primary" onclick="alert('Thanks for contacting Omotech!')">Contact Me</button>
-    <button class="secondary" onclick="alert('See my portfolio!')">View Portfolio</button>
-  </section>
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="constrain">
+    <small>&copy; 2025 Omotech Portfolio</small>
+  </div>
+</footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Omotech. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
